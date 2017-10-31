@@ -3,7 +3,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { SampleComponent } from './sample.component';
-import { describe } from 'jest';
+import {} from '@types/jest'; // Question: If I don't import this, then I don't get intellisense for the 'it' functions et al. But here I'm still getting a warning. What's best practise? Disable in TSLint? Another way?
 
 describe('SampleComponent', () => {
   let comp: SampleComponent;
@@ -28,10 +28,14 @@ describe('SampleComponent', () => {
   it('Should be false', () => {
     expect(true).toBe(true);
   });
-});
 
-describe('DamienPipe', () => {
-  it('transforms "input" to "output"', () => {
-    expect(1).toBe(2);
+  it('Should be a number', () => {
+    expect(6).toBe(6);
+  });
+
+  it('', () => {
+    expect(199).toBe(199);
   });
 });
+
+
