@@ -10,6 +10,7 @@ export * from './component/sample/sample.component';
 export * from './sample.directive';
 export * from './sample.pipe';
 export * from './sample.service';
+export * from './classes/functions/functions';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ export * from './sample.service';
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    FunctionsService
   ]
 })
 export class SampleModule {
