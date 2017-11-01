@@ -18,12 +18,11 @@
   },
   "jest": {
     "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/src/jest.ts",
-    "moduleNameMapper": null
+    "setupTestFrameworkScriptFile": "<rootDir>/src/jest.ts"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/repo"
+    "url": "https://github.com/damiensawyer/fp2-core"
   },
   "author": {
     "name": "Damien Sawyer",
@@ -34,7 +33,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/username/repo/issues"
+    "url": "https://github.com/damiensawyer/fp2-core/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",

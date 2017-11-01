@@ -3,7 +3,14 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { SampleComponent } from './sample.component';
-import {} from '@types/jest'; // Question: If I don't import this, then I don't get intellisense for the 'it' functions et al. But here I'm still getting a warning. What's best practise? Disable in TSLint? Another way?
+import { FunctionsService } from 'classes/functions/functions';
+// importing from jest.... https://stackoverflow.com/a/42035003
+
+describe('Another set of tests', () => {
+  it('should work...', () => {
+    expect(123).toBe(123);
+  });
+});
 
 describe('SampleComponent', () => {
   let comp: SampleComponent;
@@ -14,6 +21,7 @@ describe('SampleComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [SampleComponent], // declare the test component
+      providers: [FunctionsService]
     });
 
     fixture = TestBed.createComponent(SampleComponent);
@@ -26,16 +34,11 @@ describe('SampleComponent', () => {
   });
 
   it('Should be false', () => {
-    expect(true).toBe(true);
+    expect(false).toBe(false);
   });
 
-  it('Should be a number', () => {
-    expect(6).toBe(6);
-  });
-
-  it('', () => {
-    expect(199).toBe(199);
+  it('should use the service', () => {
+    const result = comp.useAddService(10, 20);
+    expect(result).toBe(30);
   });
 });
-
-
