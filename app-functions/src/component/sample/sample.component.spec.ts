@@ -3,8 +3,10 @@ import { By } from "@angular/platform-browser";
 import { DebugElement } from "@angular/core";
 
 import { SampleComponent } from "./sample.component";
-import { FunctionsService } from "classes/functions/functions";
+import { FunctionsService } from "../../classes/functions/functions";
 // importing from jest.... https://stackoverflow.com/a/42035003
+// debugging jest https://medium.com/@mattmazzola/how-to-debug-jest-tests-with-vscode-48f003c7cb41
+
 
 describe("Another set of tests", () => {
   it("should work...", () => {

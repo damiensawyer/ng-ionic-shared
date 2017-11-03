@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { FunctionsService } from 'classes/functions/functions';
+import { FunctionsService } from './classes/functions/functions';
 
 @Injectable()
 export class SampleService {

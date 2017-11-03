@@ -4,7 +4,7 @@ import { SampleComponent } from './component/sample/sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
 import { SampleService } from './sample.service';
-import { FunctionsService } from 'classes/functions/functions';
+import { FunctionsService } from './classes/functions/functions';
 
 export * from './component/sample/sample.component';
 export * from './sample.directive';

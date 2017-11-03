@@ -1,5 +1,5 @@
 import { Component, Inject } from "@angular/core";
-import { FunctionsService } from "classes/functions/functions";
+import { FunctionsService } from "../../classes/functions/functions";
 
 @Component({
   selector: "sample-component",
